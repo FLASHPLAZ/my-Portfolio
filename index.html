@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer Lamichhane - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/jJL3YZC.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__spinner"></div>
+            <p class="preloader__text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Sidebar Backdrop -->
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+    <!-- Left Sidebar Navigation -->
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar__content">
+            <!-- Profile Section -->
+            <div class="profile">
+                <div class="profile__image">
+                    <img src="https://i.imgur.com/jJL3YZC.jpeg" alt="Sameer Lamichhane" id="profile-img">
+                </div>
+                <h2 class="profile__name">Sameer Lamichhane</h2>
+                <p class="profile__title">Full Stack Developer</p>
+                
+                <!-- Social Media Icons -->
+                <div class="social-links">
+                    <a href="https://www.instagram.com/bhuwan.xyz" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://discord.com/users/1419030432292409515" class="social-link" aria-label="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://github.com/sameerlamichhane" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a></li>
+                <li><a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a></li>
+                <li><a href="#resume" class="nav-link" data-section="resume">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Resume</span>
+                </a></li>
+                <li><a href="#portfolio" class="nav-link" data-section="portfolio">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Portfolio</span>
+                </a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section hero active">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            <span class="hero__greeting">Hello, I'm</span>
+                            <span class="hero__name">Sameer Lamichhane</span>
+                        </h1>
+                        <p class="hero__subtitle">
+                            <span class="hero__subtitle-text" id="typing-text"></span>
+                        </p>
+                        <div class="status-indicator">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Active for Freelancing</span>
+                        </div>
+                        <p class="hero__description">
+                            I create beautiful, functional, and user-centered digital experiences that solve real-world problems.
+                        </p>
+                        <div class="hero__buttons">
+                            <a href="#portfolio" class="btn btn--primary">View My Work</a>
+                            <a href="#contact" class="btn btn--secondary">Get In Touch</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">About Me</h2>
+                    <p class="section__subtitle">Get to know me better</p>
+                </div>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>
+                            I'm a passionate full-stack developer with over 3 years of experience in creating 
+                            digital solutions that make a difference. I specialize in modern web technologies 
+                            and have a keen eye for design and user experience.
+                        </p>
+                        <p>
+                            When I'm not coding, you can find me exploring new technologies, contributing to 
+                            open-source projects, or sharing knowledge with the developer community.
+                        </p>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills & Technologies</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Resume</h2>
+                    <p class="section__subtitle">My professional journey</p>
+                </div>
+                
+                <div class="resume__content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Bsc.CSIT</h3>
+                                <h4>Butwal Multiple Campus - BMC</h4>
+                                <span class="timeline-date">Future Plan</span>
+                                <p>
+                                    Bachelor of Science in Computer Science and Information Technology in Tribhuvan University.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>+2 in Computer Science</h3>
+                                <h4>Tilottama Campus</h4>
+                                <span class="timeline-date">2024 - Present</span>
+                                <p>
+                                    +2 in Computer Science for further study in Bachelor of Science in Computer Science in Tribhuvan University.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Portfolio</h2>
+                    <p class="section__subtitle">Some of my recent work</p>
+                </div>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Websites</button>
+                    <button class="filter-btn" data-filter="app">Discord Bots</button>
+                    <button class="filter-btn" data-filter="card">Certificates</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="https://i.imgur.com/L14xhm4.png" alt="Portfolio Website">
+                            <div class="portfolio-overlay">
+                                <h3>Portfolio Website</h3>
+                                <p>My personal portfolio website made with HTML, CSS, and JavaScript to showcase my work and skills.</p>
+                                <div class="portfolio-links">
+                                    <a href="https://sameerlamichhane.com.np" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="app">
+                        <div class="portfolio-image">
+                            <img src="https://i.imgur.com/dBhSqQA.png" alt="Wallet Bot">
+                            <div class="portfolio-overlay">
+                                <h3>Crypto Wallet Bot</h3>
+                                <p>Crypto wallet bot for Discord to manage your crypto assets and transactions.</p>
+                                <div class="portfolio-links">
+                                    <a href="https://discord.gg/skyex" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="https://i.imgur.com/VxmGlaO.png" alt="Ostil Cafe">
+                            <div class="portfolio-overlay">
+                                <h3>Ostil Cafe</h3>
+                                <p>Cafe website for Ostil Cafe</p>
+                                <div class="portfolio-links">
+                                    <a href="https://ostilcafe.vercel.app" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="card">
+                        <div class="portfolio-image">
+                            <img src="https://media.istockphoto.com/id/1409258803/vector/certificate-flat-design-on-color-background.jpg?s=612x612&w=0&k=20&c=v66J2kZty-s4TGNgJ8vlRmSaP-ShFMk4EHcca84zpG4=" alt="Butwal Hackathon">
+                            <div class="portfolio-overlay">
+                                <h3>Butwal Hackathon</h3>
+                                <p>Butwal Hackathon website for ButwalHackathon</p>
+                                <div class="portfolio-links">
+                                    <a href="https://i.imgur.com/La9Miwl.png" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="app">
+                        <div class="portfolio-image">
+                            <img src="https://i.imgur.com/XcKS4x9.png" alt="Discord AutoMM Crypto Bot">
+                            <div class="portfolio-overlay">
+                                <h3>Discord Escrow Crypto Bot</h3>
+                                <p>Discord bot for Escrow Crypto to secure your transactions holding payments unless you receive the item.</p>
+                                <div class="portfolio-links">
+                                    <a href="https://discord.gg/skyex" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="https://i.imgur.com/hI5iIxj.png" alt="Blog Platform">
+                            <div class="portfolio-overlay">
+                                <h3>Tilottama Campus</h3>
+                                <p>Campus website for Tilottama Campus</p>
+                                <div class="portfolio-links">
+                                    <a href="https://tilottama.edu.np" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Get In Touch</h2>
+                    <p class="section__subtitle">Let's work together</p>
+                </div>
+                <div class="contact__content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>contact@sameerlamichhane.com.np</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+977 9748807131</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Butwal, Nepal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="760f4768-092e-4297-94aa-c564ed49b095">
+                        <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
+                        <input type="hidden" name="from_name" value="Sameer Lamichhane Portfolio">
+                        <input type="hidden" name="redirect" value="true">
+                        
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2024 Sameer Lamichhane. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/bhuwan.xyz" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.com/users/1419030432292409515" class="footer-social-link"><i class="fab fa-discord"></i></a>
+                    <a href="https://github.com/sameerlamichhane" class="footer-social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
