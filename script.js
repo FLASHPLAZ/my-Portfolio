@@ -787,4 +787,4 @@ document.head.appendChild(loadingStyleSheet);
 
 // Console welcome message
 console.log('%c🚀 Portfolio Website Loaded Successfully!', 'color: #4A90E2; font-size: 16px; font-weight: bold;');
-console.log('%cBuilt with ❤️ by Sameer Lamichhane', 'color: #666; font-size: 12px;');
+console.log('%cBuilt with ❤️ by Graze', 'color: #666; font-size: 12px;');
